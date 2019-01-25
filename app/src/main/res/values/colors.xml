@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4785D6</color>
+    <color name="colorPrimaryDark">#315D95</color>
+    <color name="colorAccent">#F4A322</color>
+
+    <color name="teacherColorPrimary">#4785D6</color>
+    <color name="teacherColorPrimaryDark">#315D95</color>
+
+    <color name="studentColorPrimary">#3D8D77</color>
+    <color name="studentColorPrimaryDark">#2A6253</color>
+
+    <color name="parentColorPrimary">#CF515D</color>
+    <color name="parentColorPrimaryDark">#903841</color>
+
+    <color name="colorGray">#666666</color>
+    <color name="messageText">#617186</color>
+    <color name="message_box_color">#f0f0f0</color>
+
+    <color name="secondary_text">#AEAEAE</color>
+    <color name="light_color">#DDDDDD</color>
+    <color name="dark_text">#565656</color>
+    <color name="fab_color">#FF2033</color>
+    <color name="item_unselected">#919191</color>
+
+    <color name="graph_green">#539a00</color>
+    <color name="graph_yellow">#ffc600</color>
+    <color name="graph_red">#de0000</color>
+    <color name="colorWhite">#FFFFFFFF</color>
+    <color name="colorBlack">#FF000000</color>
+    <color name="colorGreen">#00FF00</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorOrange">#FF5500</color>
+    <color name="colorYellow">#FFFF00</color>
+    <color name="colorGrayLight">@android:color/darker_gray</color>
+
+
+    <color name="text_color_with_opacity">#b2ffffff</color>
+    <color name="navigation_background">#fafafa</color>
+    <color name="colorOrangeHint">#f4a322</color>
+
+    <color name="text_dark">#dd000000</color>
+    <color name="tab_text_color">#b5212121</color>
+    <color name="card_text_color">#89000000</color>
+    <color name="tab_unselected_text_color">#b5212121</color>
+    <color name="tab_selected_text_color">#f4a322</color>
+
+
+    <color name="chartLineColor">#FFFFFF</color>
+    <color name="mainItem">#10ccee</color>
+    <color name="mainText">#FFFFFF</color>
+    <color name="mainBackgroundColor">#20ddff</color>
+    <color name="color_purple">#a00dab</color>
+
+</resources>

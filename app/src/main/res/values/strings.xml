@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="retry">Retry</string>
+    <string name="post_error">An error occurred while loading the posts</string>
+    <string name="API_KEY" translatable="false">b2127cd3525785913a4e2baaea458578</string>
+    <string name="tvforecast24H">Forecast</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="select_this_city">Select this city?</string>
+    <string name="city_temp" translatable="false">%s℃</string>
+    <string name="remove_this_city">Remove this city?</string>
+    <string name="tvHumudity" translatable="false">%s%%</string>
+    <string name="tvPressure" translatable="false">%s mmHg</string>
+    <string name="wind_speed" translatable="false">%s m/s</string>
+    <string name="no_direcrion" translatable="false"/>
+    <string name="wind_direction_north">North</string>
+    <string name="wind_direction_north_east">NorthEast</string>
+    <string name="wind_direction_east">East</string>
+    <string name="wind_direction_south_east">SouthEast</string>
+    <string name="wind_direction_south">South</string>
+    <string name="wind_direction_south_west">SouthWest</string>
+    <string name="wind_direction_west">West</string>
+    <string name="wind_direction_north_west">NorhWest</string>
+    <string name="city_name">City name</string>
+    <string name="add_city">Add City</string>
+    <string name="empty_place_list">Your saved place empty.</string>
+    <string name="your_cities">Yours Cities</string>
+    <string name="city_search_title">Search city</string>
+    <string name="error_message">There was an error while getting data.</string>
+    <string name="local_data">Local data loaded</string>
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.test.weather.ui.main.MainActivityViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarWA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@color/colorWhite">
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:id="@+id/rv_add_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbarWA"
+            android:layout_marginTop="56dp"
+            android:visibility="visible"
+            app:mutableVisibility="@{viewModel.getEmptyContainerVisibility()}">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_add_city"
+                android:layout_width="124dp"
+                android:layout_height="124dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/weather_fog"
+                android:visibility="visible" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_add_city"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:text="@string/empty_place_list"
+                android:textColor="@color/colorWhite"
+                android:textSize="22sp" />
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_cities"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/ll_action"
+            android:layout_below="@id/toolbarWA"
+            android:orientation="vertical"
+            app:adapter="@{viewModel.getAdapter()}" />
+
+        <LinearLayout
+            android:id="@+id/ll_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:padding="9dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_current_position"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_round_white_background"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:text="Current"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/teacherColorPrimary"
+                android:visibility="visible" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_add_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_round_white_background"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:text="@string/add_city"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/teacherColorPrimary"
+                android:visibility="visible" />
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

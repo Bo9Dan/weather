@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.test.weather.ui.search.CityViewModel" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_vertical"
+            android:layout_weight="1"
+            android:padding="8dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/buttonDelete"
+                android:fontFamily="@font/roboto_medium"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimary"
+                android:textSize="22sp"
+                app:mutableText="@{viewModel.cityName}" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                app:mutableText="@{viewModel.country}" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_population"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_country"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@id/tv_country"
+                android:fontFamily="@font/roboto_regular"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/buttonDelete"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/del_button"
+                android:focusable="false" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
